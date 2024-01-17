@@ -28,7 +28,8 @@ header {
 }
 
 h1 {
-    font-size: 6.7vw;
+    font-size: 7vw;
+    font-variant: small-caps;
     font-family: "Unbounded", sans-serif;
     padding: 25px 0;
 }
@@ -37,17 +38,18 @@ h1 {
 main p {
     font-size: 4.5vw;
     font-weight: bold;
-    padding-left: 20px;
-    line-height: 8vw;
 }
 
 /* sections dos parágrafos */
-section.prg > p {
-    margin: 5vw 0;
+section {
+    padding-top: 12vh;
+    padding-bottom: 12vh;
+    line-height: 8vw;
+    padding-left: 30px;
 }
 
 /* link */
-header > a {
+a {
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -55,7 +57,7 @@ header > a {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header > a:hover {
+a:hover {
     text-decoration: underline;
 }
 
@@ -68,9 +70,10 @@ span.txtLink {
 section.paralax {
     position: relative;
     background: no-repeat center center/cover fixed;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.47);
     width: 100%;
     margin: 0;
-    height: 45vw;
+    height: 65vw;
     color: white;
 }
 
@@ -92,50 +95,35 @@ section#prl2 {
 figcaption.legend {
     position: absolute;
     background-color: #0806065c;
-    width: 54vw;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.397);
+    display: inline-block;
     top: 50%;left: 2.3%;
     transform: translate(0, -50%);
     border-radius: 10px;
-}
-
-/* altura da legenda 1 */
-#leg1 {
-    height: 40vw;
-}
-
-/* altura da legenda 2 */
-#leg2 {
-    height: 40vw;
-    width: 57vw;
+    height: 50vw;
+    line-height: 7vw;
+    padding: 10px;
 }
 
 /* rodapé */
 footer {
-    position: relative;
     background-color: black;
     color: white;
-    height: 110px;
+    height: auto;
     width: 100%;
     text-align: center;
 }
 
 footer > p {
-    position: absolute;
-    top: 50%;left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 1.1em;
-    width: 100vw;
-    margin: 0;
+    font-size: 1.4em;
+    width: 100%;
+    padding: 7px 15px;
 }
 
-footer > p > a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: .9em;
-    font-family: Arial, Helvetica, sans-serif;
+footer a {
+    font-size: 1em;
 }
 
-footer > p > a:hover {
-    text-decoration: underline;
+footer span.txtF {
+    font-size: 1.3em;
 }
